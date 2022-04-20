@@ -1,15 +1,9 @@
-import { Controller } from "@hotwired/stimulus"
+import { Application } from "@hotwired/stimulus"
 
-// Connects to data-controller="modal"
-export default class extends Controller {
-  connect() {
-    this.modal = new bootstrap.Modal(this.element, {
-      keyboard: false
-    })
-    this.modal.show()
-  }
+const application = Application.start()
 
-  disconnect() {
-    this.modal.hide()
-  }
-}
+// Configure Stimulus development experience
+application.debug = false
+window.Stimulus   = application
+
+export { application }
