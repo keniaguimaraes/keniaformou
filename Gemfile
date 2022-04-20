@@ -11,15 +11,15 @@ gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
-
+gem "coffee-rails"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
-
+gem "popper_js", '~> 2.9', '>= 2.9.3'
+gem "turbo-rails"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
@@ -48,7 +48,10 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 gem 'sass-rails'
-
+gem "image_processing"
+gem 'active_storage_drag_and_drop'
+gem 'jquery-rails' 
+gem  "will_paginate-bootstrap"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
