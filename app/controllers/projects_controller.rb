@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects
   def index
-    @projects = Project.order(created_at: :desc).all.paginate(:page => params[:page], :per_page => 3)
+    @projects = Project.order(created_at: :desc).all.paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /projects/1
